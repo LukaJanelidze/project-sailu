@@ -8,7 +8,7 @@ export default function SecondSection() {
     const [inputLink, setInputLink] = useState('');
     const [formSubmitted, setFormSubmitted] = useState(false);
     const [isInputEmpty, setIsInputEmpty] = useState(false);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handleInputChange = (e) => {
         setInputLink(e.target.value);
@@ -25,7 +25,14 @@ export default function SecondSection() {
             setIsInputEmpty(true);
             return;
         }
+        navigate('/thirdsection')
 
+    };
+
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleSubmit(e);
+        }
     };
 
     return (
@@ -38,12 +45,12 @@ export default function SecondSection() {
 
             <p>To receive the airdrop, post on X why you are bullish on $AILU and submit the link to your post in the "Insert Link" section</p>
 
-            <form onSubmit={handleSubmit}>
                 <input
                     className='X-link-input'
                     placeholder="Insert here"
                     value={inputLink}
                     onChange={handleInputChange}
+                    onKeyDown={handleKeyPress}
                 />
 
                 {(isInputEmpty && formSubmitted) && (
@@ -58,11 +65,8 @@ export default function SecondSection() {
                     <button 
                     className='secondsection-next-button' 
                     type="submit"
-                    onClick={ () => { 
-                        if(inputLink) navigate('/thirdsection')
-                    }}>NEXT <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+                    onClick={handleSubmit}>NEXT <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
                 </div>
-            </form>
         </div>
     </AnimatedPage>
     );
