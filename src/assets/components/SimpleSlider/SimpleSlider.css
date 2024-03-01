@@ -1,0 +1,42 @@
+.carousel-section {
+    margin: 45px 0 67.2px 18px;
+}
+
+.carousel-section h2 {
+    height: 36px;
+    flex-grow: 0;
+    font-family: "Asap", sans-serif;
+    font-size: 31.2px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #846447;
+}
+
+.carousel-section hr {
+    width: 192.3px;
+    height: 1px;
+    flex-grow: 0;
+    background-color: #ff5f2d;
+    margin: 8.8px 0 17.9px 0;
+}
+
+.carousel-div .carousel-div-links img {
+    width: 79.1px;
+    height: 79.1px;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .carousel-section {
+        width: 1190px;
+        margin: 45px 0 67.2px 195px;
+    }
+    .carousel-div .carousel-div-links img {
+        width: 81.1px;
+        height: 81.1px;
+    }
+}

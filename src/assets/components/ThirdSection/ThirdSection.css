@@ -1,0 +1,261 @@
+.thirdsection {
+    background-color: #fff;
+    height: 349px;
+    margin: 16px;
+    border-radius: 32px;
+    box-shadow: 0 0 43.2px 0 rgba(0, 0, 0, 0.25);
+    padding: 48px 42px 48px 42px;
+    position: relative;
+}
+
+.thirdsection .thirdsection-headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.thirdsection .thirdsection-headline svg {
+    width: 42px;
+    height: 42px;
+    flex-grow: 0;
+    fill: #ff5f2d;
+}
+
+.thirdsection h1 {
+    flex-grow: 1;
+    font-family: "Cairo", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff5f2d;
+}
+
+.thirdsection p {
+    height: 90px;
+    align-self: stretch;
+    flex-grow: 0;
+    opacity: 0.9;
+    font-family: "Asap", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #383838;
+    margin-top: 16px;
+}
+
+.thirdsection .wallet-input {
+    width: 100%;
+    height: 48px;
+    align-self: stretch;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.8px;
+    padding: 2.8px 4.5px;
+    border-radius: 3.7px;
+    border: solid 0.3px #c1c1c1;
+    background-color: #feffef;
+    margin-top: 32px;
+}
+
+.thirdsection .wallet-input::placeholder {
+    width: 67px;
+    height: 16px;
+    flex-grow: 0;
+    opacity: 0.5;
+    font-family: "Asap", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #383838;
+}
+
+.thirdsection .button-back-div {
+    position: absolute;
+    left: 16px;
+    bottom: -32px;
+    border-radius: 32px;
+}
+
+.thirdsection .thirdsection-back-button {
+    width: 132px;
+    height: 48px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    border-radius: 32px;
+    background-color: #2E1018;
+    font-family: "Cairo", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    border: none;
+    fill: white;
+    cursor: pointer;
+}
+
+.thirdsection .links {
+    text-decoration: none;
+}
+
+.thirdsection .button-next-div {
+    position: absolute;
+    right: 16px;
+    bottom: -32px;
+    border-radius: 32px;
+}
+
+.thirdsection .thirdsection-next-button {
+    width: 165px;
+    height: 48px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    border-radius: 32px;
+    background-color: #ff5f2d;
+    font-family: "Cairo", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    border: none;
+    fill: white;
+    cursor: pointer;
+}
+
+.thirdsection .thirdsection-next-button svg {
+    width: 10.7px;
+}
+
+.thirdsection .thirdsection-back-button svg {
+    width: 10.7px;
+    transform: rotate(-180deg);
+}
+
+.error {
+    color: red;
+    font-family: "Cairo", sans-serif;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .thirdsection {
+        width: 1142px;
+        height: 503px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 23px;
+        border-radius: 32px;
+        box-shadow: 0 0 43.2px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .thirdsection .thirdsection-headline svg {
+        width: 64.6px;
+        height: 82.2px;
+    }
+
+    .thirdsection .thirdsection-headline h1 {
+        font-size: 58px;
+    }
+
+    .thirdsection p {
+        font-size: 24px;
+    }
+
+    .thirdsection .wallet-input {
+        height: 57px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        border-radius: 13px;
+        font-size: 32px;
+        border: solid 1px #c1c1c1;
+        background-color: #feffef;
+
+    }
+
+    .thirdsection .wallet-input::placeholder {
+        height: 37px;
+        color: #383838;
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .thirdsection .thirdsection-back-button {
+        width: 165px;
+        height: 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 24px;
+        border-radius: 32px;
+        font-size: 32px;
+        background-color: #2e1018;
+    }
+
+    .thirdsection .thirdsection-back-button svg {
+        width: 21.3px;
+    }
+
+    .thirdsection .thirdsection-next-button {
+        width: 165px;
+        height: 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 24px;
+        border-radius: 32px;
+        font-size: 32px;
+        color: #fff;
+    }
+
+    .thirdsection .thirdsection-next-button svg {
+        width: 21.3px;
+    }
+
+    .error {
+        margin-left: 5px;
+        font-size: 16px;
+    }
+}

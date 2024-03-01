@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Baloo+2:wght@400..800&family=Cairo:wght@200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    touch-action: manipulation;
+    -ms-touch-action: manipulation; 
+}
+
+body {
+    background-color: #F8F9E9;
+    overflow-x: hidden;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-picture-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: -18%;
+}
+
+.second-picture-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: -18%;
+}
+
+.pictures {
+    width: 150px;
+    height: 300px;
+    flex-grow: 0;
+    opacity: 0.1;
+}
+
+@media only screen and (min-width: 1024px) {
+    .first-picture-section {
+        right: -10%;
+    }
+
+    .second-picture-section {
+        left: -10%;
+    }
+
+    .pictures {
+        width: 300px;
+        height: 350px;
+    }
+}
