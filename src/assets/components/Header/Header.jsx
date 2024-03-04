@@ -7,9 +7,9 @@ export default function FirstSection() {
         <div className='header'>
             <Link to="/" className="logo"><img src={Logo} alt="" /><span>$AILU</span></Link>
             <div className="xdt">
-            <Link to="/" className="X">X</Link>
-            <Link to="/" className="discord">Discord</Link>
-            <Link to="/" className="telegram">Telegram</Link>
+            <Link to="https://twitter.com/ailurus_sol" className="X">X</Link>
+            <Link to="https://discord.gg/G6ZnSUPRJW" className="discord">Discord</Link>
+            <Link to="https://t.me/ailurus_sol" className="telegram">Telegram</Link>
             </div>
         </div>
     )
