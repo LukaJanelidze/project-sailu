@@ -6,12 +6,12 @@ import SecondSection from './assets/components/SecondSection/SecondSection';
 import ThirdSection from './assets/components/ThirdSection/ThirdSection';
 import FourthSection from './assets/components/FourthSection/FourthSection';
 import SimpleSlider from './assets/components/SimpleSlider/SimpleSlider';
-import PictureOne from './assets/PictureOne.jpg';
-import PictureTwo from './assets/PictureTwo.jpg';
-import PictureThree from './assets/PictureThree.jpg';
-import PictureFour from './assets/PictureFour.jpg';
-import PictureFive from './assets/PictureFive.jpg';
-import PictureSix from './assets/PictureSix.jpg';
+import PictureOne from './assets/PictureOne.jpeg';
+import PictureTwo from './assets/PictureTwo.jpeg';
+import PictureThree from './assets/PictureThree.jpeg';
+import PictureFour from './assets/PictureFour.jpeg';
+import PictureFive from './assets/PictureFive.jpeg';
+import PictureSix from './assets/PictureSix.jpeg';
 import './App.css';
 
 function App() {
