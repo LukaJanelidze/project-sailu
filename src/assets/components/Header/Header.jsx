@@ -6,7 +6,7 @@ export default function FirstSection() {
     return (
         <div className='header'>
             <Link to="/" className="logo"><img src={Logo} alt="" /><span>$AILU</span></Link>
-            <div className="xdt">
+            <div className="xt">
             <Link to="https://twitter.com/ailurus_sol" className="X">X</Link>
             <Link to="https://t.me/ailurus_sol" className="telegram">Telegram</Link>
             </div>
