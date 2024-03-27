@@ -8,7 +8,6 @@ export default function FirstSection() {
             <Link to="/" className="logo"><img src={Logo} alt="" /><span>$AILU</span></Link>
             <div className="xdt">
             <Link to="https://twitter.com/ailurus_sol" className="X">X</Link>
-            <Link to="https://discord.gg/T83wRAECg3" className="discord">Discord</Link>
             <Link to="https://t.me/ailurus_sol" className="telegram">Telegram</Link>
             </div>
         </div>
